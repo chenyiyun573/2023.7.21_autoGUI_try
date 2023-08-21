@@ -2,6 +2,7 @@
 
 import socket
 from PIL import Image, ImageShow
+import io
 
 class Server:
     def __init__(self, host, port):
@@ -38,5 +39,5 @@ class Server:
 
 
 if __name__ == "__main__":
-    server = Server('127.0.0.1', 65432)
+    server = Server('0.0.0.0', 65432)
     server.run()

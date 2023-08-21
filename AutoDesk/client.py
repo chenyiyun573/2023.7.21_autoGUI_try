@@ -47,5 +47,6 @@ class Client:
 
 
 if __name__ == "__main__":
-    client = Client('127.0.0.1', 65432)
+
+    client = Client('192.168.137.39', 65432) # matebook hotspot as wifi, matebook run client, mac m1 as server.
     client.run()
